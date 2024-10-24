@@ -35,6 +35,17 @@
         width: 50%;
         margin: 0 auto;
     }
+
+    #countdown {
+        color: #5900ff;
+        font-size: 20px;
+        text-align: center;
+        position:absolute; top:250px; 
+        left:10px; right:10px;
+        width: 50%;
+        margin: 0 auto;
+        font-weight: bold;
+    }
     
     #mycanvas {
         color: #ffffff;
@@ -54,11 +65,21 @@
     #btnB {
         font-size: 20px;
         position:absolute; top:380px; left:45%; width:25%; height:60px;
+        background-color: red;
+        color: yellow;
     }
 
     #btnC {
-        font-size: 10px;
+        font-size: 20px;
         position:absolute; top:380px; left:70%; width:28%; height:60px; 
+        background-color:greenyellow;
+    }
+
+    #btnD {
+        font-size: 20px;
+        position:absolute; top:445px; left:72%; width:25%; height:60px; 
+        background-color: orange;
+        color: teal;
     }
     
     #minute {
