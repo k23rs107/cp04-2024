@@ -159,7 +159,6 @@
     var period = 0;
     var rest = 0;
     var etime = 0;
-    var hoidTime = 0;
 
 
     
@@ -191,7 +190,6 @@
         active = true;
         startTime = new Date();
         $("#countdown").html("タイマー開始");
-        holdTime=period;
         
         
     }
@@ -199,7 +197,6 @@
     // ButtonBがクリックされた時の処理
     function btnBClick(e){
         active = false;
-        holdTime=rest;
         $("#countdown").html("タイマー停止");
         
         
@@ -211,7 +208,7 @@
         period = 60* parseInt( $("#minute").val() ) + parseInt( $("#second").val() );
         $("#time").html("経過時間 ： 0");
         $("#remain").html("残り時間： "+period);
-        $("#countdown").html("");
+        $("#countdown").html("タイマーセット");
 
         
     }
@@ -220,7 +217,7 @@
     // ButtonDがクリックされた時の処理
     function btnDClick(e){
         active=true;
-        startTime = new Date() - (period - holdTime)*1000 ;
+        startTime = new Date() - etime*1000 ;
         $("#countdown").html("タイマー再開");
 
     }
